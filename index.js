@@ -5,10 +5,10 @@
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
-//Didn't really know how to use undefined but figured it out
+//Didn't really know how to use undefined but figured it out - it returns undefined all the time if I use this: !==.
 if (userPreference === '') {
     userPreference = 'Regular';
-} else if (userPreference !== undefined) {
+} else if (userPreference == undefined) {
     userPreference = 'undefined';
 };
 
@@ -21,9 +21,9 @@ console.log(`This user prefers a ${userPreference} drink`);
 let cansLeft = 7; // Any number of cans
 
 if (cansLeft < 5) {
-    console.log(`Time to restock`);
+    console.log(`"Time to restock!"`);
 } else if (cansLeft >= 5 ) {
-    console.log(`We're Stocked!`);
+    console.log(`"We're stocked!"`);
 };
 
 
@@ -31,8 +31,14 @@ if (cansLeft < 5) {
 // Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout. 
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
-let heartRate = 95; // Current heart rate in bpm
-console.log(`'}`);
+let heartRate = 50; // Current heart rate in bpm
+
+if (heartRate < 100) {
+    console.log(`"Boost needed!"`);
+} else {
+    console.log(`"Energy levels are high!"`);
+};
+
 
 
 // #### Challenge 4: Temperature Suitability
