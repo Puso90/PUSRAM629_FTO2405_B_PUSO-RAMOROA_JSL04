@@ -14,44 +14,38 @@ if (userPreference === '') {
 
 console.log(`This user prefers a ${userPreference} drink`);
 
+
+
+
+
 // #### Challenge 2: Stock Check
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
 let cansLeft = 7; // Any number of cans
 
-if (cansLeft < 5) {
-    console.log(`"Time to restock!"`);
-} else if (cansLeft >= 5 ) {
-    console.log(`"We're stocked!"`);
-};
+let stockLeftMessage = (cansLeft < 5) ? `Time to restock!` : `We're stocked!`;
+console.log(stockLeftMessage);
 
 
 // #### Challenge 3: Workout Intensity
 // Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout. 
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
-let heartRate = 50; // Current heart rate in bpm
+let heartRate = 150; // Current heart rate in bpm
 
-if (heartRate < 100) {
-    console.log(`"Boost needed!"`);
-} else {
-    console.log(`"Energy levels are high!"`);
-};
-
+let heartRateMessage = (heartRate < 100) ? `Boost needed!` : `Energy levels are high!`;
+console.log(heartRateMessage);
 
 
 // #### Challenge 4: Temperature Suitability
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
-let currentTemp = 4; // Current temperature in °C
+let currentTemp = 8; // Current temperature in °C
 
-if (currentTemp <= 5) {
-    console.log(`"Chilled to perfection!"`);
-} else if (currentTemp > 5) {
-    console.log(`"Needs a cooler!"`);
-};
+let timeMessage = (currentTemp <= 5 && currentTemp > 5) ? `Chilled to perfection!` : `Needs a cooler!`;
+console.log(timeMessage);
 
 
 // #### Challenge 5: Late Night Coding Session
@@ -62,8 +56,8 @@ if (currentTemp <= 5) {
 // Define the current hour in 24-hour format
 let currentHour = 22; 
 
- let message = (currentHour > 7 && currentHour < 24 ) ? `Unleash the beast!` : `Better stick to water.`;
- console.log(message);
+ let hourMessage = (currentHour > 7 && currentHour < 24 ) ? `Unleash the beast!` : `Better stick to water.`;
+ console.log(hourMessage);
 
 // Shorthand ternary operator
 /*
@@ -72,7 +66,11 @@ let message = (age >= 18) ? 'You are an adult.' : 'You are a minor.';
 console.log(message); */
 
 
-
+//---------------------------------------------------------------------------------------------------------------
 // In each of these challenges, the ternary operator is used to decide between two options based on a condition, 
 // demonstrating its utility for concise conditional logic. Remember that while ternaries can make the code more succinct, 
 // they should be used judiciously to maintain readability, especially for more complex conditions
+
+/*REFERENCE TO SOLUTION: 
+1.  https://lokesh-prajapati.medium.com/javascript-shorthand-techniques-ultimate-cheat-sheet-415d9abbe47c
+2.  https://builtin.com/software-engineering-perspectives/ternary-operator-js#:~:text=What%20Is%20The%20Ternary%20(Conditional,value%20to%20return%20if%20false.
