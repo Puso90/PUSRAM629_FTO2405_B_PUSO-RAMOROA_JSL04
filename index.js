@@ -42,9 +42,9 @@ console.log(heartRateMessage);
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
-let currentTemp = 8; // Current temperature in °C
+let currentTemp = 6; // Current temperature in °C
 
-let timeMessage = (currentTemp <= 5 && currentTemp > 5) ? `Chilled to perfection!` : `Needs a cooler!`;
+let timeMessage = (currentTemp <= 5) ? `Chilled to perfection!` : `Needs a cooler!`;
 console.log(timeMessage);
 
 
@@ -54,7 +54,7 @@ console.log(timeMessage);
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-let currentHour = 22; 
+let currentHour = 18; 
 
  let hourMessage = (currentHour > 7 && currentHour < 24 ) ? `Unleash the beast!` : `Better stick to water.`;
  console.log(hourMessage);
@@ -74,3 +74,4 @@ console.log(message); */
 /*REFERENCE TO SOLUTION: 
 1.  https://lokesh-prajapati.medium.com/javascript-shorthand-techniques-ultimate-cheat-sheet-415d9abbe47c
 2.  https://builtin.com/software-engineering-perspectives/ternary-operator-js#:~:text=What%20Is%20The%20Ternary%20(Conditional,value%20to%20return%20if%20false.
+*/
